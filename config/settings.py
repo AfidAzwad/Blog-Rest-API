@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     # 3rd party
     'rest_framework',
     'rest_framework_simplejwt',
-    
+
     'user',
 ]
 
@@ -149,8 +149,7 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
-
-JWT_AUTH = {
+SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(hours=1),  # Set the expiration time here
 }
 
